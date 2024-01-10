@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import avvocato from "../Avvocato-cassazionista.png";
 const { Navbar, Nav, Container } = require("react-bootstrap");
 const Headliner = () => {
@@ -23,9 +24,13 @@ const Headliner = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link className="fs-5">Home</Nav.Link>
-              <Nav.Link className="fs-5">Lo studio</Nav.Link>
-              <Nav.Link className="fs-5">Contatti</Nav.Link>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <h5 className="fs-5 nav-link mt-1">Home</h5>
+              </Link>
+
+              <Link to="/contatti" style={{ textDecoration: "none" }}>
+                <h5 className="fs-5 nav-link mt-1">Contatti</h5>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
