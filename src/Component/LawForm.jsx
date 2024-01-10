@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Col, Container, Form, InputGroup, Row } from "react-bootstrap";
+import { Button, Container, Form, InputGroup } from "react-bootstrap";
 
 const LawForm = () => {
   const [validated, setValidated] = useState(false);
@@ -110,9 +110,9 @@ const LawForm = () => {
               </Form.Control.Feedback>
             </Form.Group>
 
-            <Form.Group md="3" controlId="validationCustom05" className=" mt-3">
+            <Form.Group md="3" controlId="validationCustom06" className=" mt-3">
               <Form.Label>Raccontaci il problema*</Form.Label>
-              <Form.Control type="text" placeholder="" required />
+              <Form.Control type="textarea" placeholder="" required />
               <Form.Control.Feedback type="invalid">
                 Perfavore completa il form
               </Form.Control.Feedback>
