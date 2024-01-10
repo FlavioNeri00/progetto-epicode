@@ -110,6 +110,14 @@ const LawForm = () => {
               </Form.Control.Feedback>
             </Form.Group>
 
+            <Form.Group md="3" controlId="validationCustom05" className=" mt-3">
+              <Form.Label>Raccontaci il problema*</Form.Label>
+              <Form.Control type="text" placeholder="" required />
+              <Form.Control.Feedback type="invalid">
+                Perfavore completa il form
+              </Form.Control.Feedback>
+            </Form.Group>
+
             <Form.Group className="mb-3 mt-3">
               <Form.Check
                 required

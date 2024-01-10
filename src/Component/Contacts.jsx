@@ -27,15 +27,15 @@ const Contacts = () => {
         >
           <h2 className="fw-bold">Orari di apertura:</h2>
           <h5 className="m-0">
-            <span className="fw-bold">Lunedì-Mercoledi-Venerdì:</span> 9-13
-            15-18
+            <span className="fw-bold">Lunedì-Mercoledi-Venerdì:</span>{" "}
+            9:00-13:00 15:00-18:00
           </h5>
           <h5 className="m-0">
-            <span className="fw-bold">Martedì-Giovedì:</span> 15-18
+            <span className="fw-bold">Martedì-Giovedì:</span> 15:00-18:00
           </h5>
           <h2 className="fw-bold mt-5">Sede e contatti: </h2>
           <h5 className="m-0">
-            <span className="fw-bold ">Indirizzo: </span>Via del Vespro, 64
+            <span className="fw-bold ">Indirizzo: </span>Via dei Vespri, 64
           </h5>
           <h5 className="m-0">
             <span className="fw-bold ">Numero di telefono: </span>+39 333 333
@@ -107,6 +107,14 @@ const Contacts = () => {
               />
               <Form.Control.Feedback type="invalid">
                 Perfavore scrivi un CAP valido
+              </Form.Control.Feedback>
+            </Form.Group>
+
+            <Form.Group md="3" controlId="validationCustom05" className=" mt-3">
+              <Form.Label>Raccontaci il problema*</Form.Label>
+              <Form.Control type="text" placeholder="" required />
+              <Form.Control.Feedback type="invalid">
+                Perfavore completa il form
               </Form.Control.Feedback>
             </Form.Group>
 
